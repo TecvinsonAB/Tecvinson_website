@@ -1,0 +1,38 @@
+/* Navbar.module.css */
+
+/* ... (previous styles) */
+
+.menu {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: none;
+  }
+  
+  .menu.open .dropdown {
+    display: block;
+  }
+  
+  .dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown li:hover {
+    background-color: #f1f1f1;
+  }
+  

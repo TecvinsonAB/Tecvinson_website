@@ -1,0 +1,36 @@
+/* Container.module.css */
+
+.container {
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1200px; /* You can adjust the max-width according to your design */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  
+  .col-1 {
+    flex: 0 0 calc(8.33333% - 16px);
+    max-width: calc(8.33333% - 16px);
+    background-color: black;
+  }
+  
+  .col-2 {
+    flex: 0 0 calc(16.66667% - 16px);
+    max-width: calc(16.66667% - 16px);
+  }
+  
+  /* Add col-3 to col-12 styles similarly for different column divisions */
+  /* ... */
+  
+  /* Add responsive classes for smaller screens if needed */
+  @media (max-width: 768px) {
+    .col-sm-1 {
+      flex: 0 0 calc(8.33333% - 16px);
+      max-width: calc(8.33333% - 16px);
+    }
+    /* ... */
+  }
+  
